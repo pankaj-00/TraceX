@@ -2,7 +2,7 @@ import "./singlePro.scss"
 import {
   amazon,
 } from "../../constants/images";
-import { PriceComp } from "..";
+import { PriceComp, Chart } from "..";
 
 const singlePro = () => {
     return (
@@ -52,6 +52,7 @@ const singlePro = () => {
             </div>
           </div>
         </div>
+        <Chart/>
         <PriceComp/>
       </>
     );

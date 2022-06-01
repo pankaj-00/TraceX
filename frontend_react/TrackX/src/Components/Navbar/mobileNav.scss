@@ -1,0 +1,137 @@
+.app__navbar-menu {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: relative;
+
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+
+    background-color: var(--secondary-color);
+
+    svg {
+        height: 80px;
+        width: 50px;
+        color: var(--white-color);
+        
+    }
+
+    div {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 5;
+
+        padding: 1rem;
+
+        width: 80%;
+        // height: 100vh;
+
+        // display: flex;
+        // justify-content: flex-end;
+        // align-items: flex-end;
+        // flex-direction: column;
+
+       
+
+         background-color: azure;
+
+        box-shadow: 0 0 20px rgba(168, 168, 168, 0.15);
+
+        svg {
+            height: 35px;
+            width: 35px;
+            color: var(--secondary-color);
+            
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            height: 30%;
+            width: 100%;
+
+            display: flex;
+            flex-direction: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+
+            li {
+                margin: 1rem;
+
+                a {
+                    color: var(--gray-color);
+                    text-decoration: none;
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                    font-weight: bold;
+
+                    transition: all 0.3s ease-in-out;
+
+                    &:hover {
+                        color: var(--secondary-color);
+                    }
+
+
+                }
+            }
+
+
+        }
+
+        @media screen and (min-width: 900px) {
+            display: none;
+        }
+
+    }
+
+    @media screen and (min-width: 900px) {
+        display: none;
+    }
+}
+
+.navbar-login {
+    // justify-content: flex-end;
+    padding: 1rem 2rem;
+    width: 400px;
+    height: 150px;
+
+    button {
+        background-color: #6C6C7E;
+        // width: 50%;
+        // height: 50%;
+        border-radius: 10px;
+        padding: 1rem 2rem;
+        margin: 1rem;
+
+        color: white;
+        font-weight: 700;
+        font-size: 1.1rem;
+        text-align: center;
+
+        &:hover {
+            background-color: #3464a9;
+            color: white;
+
+        }
+
+
+
+
+    }
+
+    button.Login {
+        background-color: #1DA52A;
+
+        &:hover {
+            background-color: #3464a9;
+            color: white;
+
+        }
+
+
+    }
+}

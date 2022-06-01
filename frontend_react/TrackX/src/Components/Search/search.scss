@@ -5,6 +5,10 @@ input:focus{
 .search{
     width: 40%;  
     border: 2px solid grey;
+
+    @media screen and (max-width: 800px) {
+            width: 80%;
+        }
 }
 
 .searchIcon{

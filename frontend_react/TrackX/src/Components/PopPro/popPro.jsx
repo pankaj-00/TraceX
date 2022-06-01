@@ -10,6 +10,9 @@ import {
   flipkart,
   chrome,
 } from "../../constants/images";
+import { Link } from "react-router-dom";
+
+
 
 const popPro = () => {
   const productArray = [
@@ -54,7 +57,7 @@ const popPro = () => {
       <strong className="my-20 app__flex text-5xl popular">
         Popular Products
       </strong>
-      <div className=" w-[75%] popContainer">
+      <div className=" lg:w-[80%] md:w-[95%] popContainer">
         <Slider
           dots={true}
           slidesToShow={3}
@@ -64,33 +67,35 @@ const popPro = () => {
           autoplaySpeed={3000}
         >
           {productArray.map((fadeImage, index) => (
-            <div className="w-[500px] h-[700px]" key={index}>
-              <div className="app__flex  h-[35%] image-container">
-                <img
-                  src={fadeImage.ProductPic}
-                  alt={fadeImage.Title}
-                  className=" w-[33.3%] images"
-                />
-              </div>
-              <div className="h-[33.3%]">
-                <strong className="my-6 mx-6 px-[5px] text-xl font titlePop">
-                  {fadeImage.Title}
-                </strong>
-                <h4 className="app__flex text-green-600 text-2xl font-bold font">
-                  {fadeImage.Price} /-
-                </h4>
-                <div className="app__flex my-5">
-                  <img className="h-[50px]" src={fadeImage.Site} alt="" />
+            <div className="w-[500px] h-[975px]" key={index}>
+              <Link to="/singleProduct">
+                <div className="app__flex  h-[400px] image-container">
+                  <img
+                    src={fadeImage.ProductPic}
+                    alt={fadeImage.Title}
+                    className=" w-[33.3%] images"
+                  />
                 </div>
-                <strong className="app__flex font font-bold text-lg">
-                  BEST PRICE
-                </strong>
-              </div>
-              <div className="w-full flex items-center justify-center h-[25%]">
-                <button className=" w-[75%] text-xl items-center px-5 py-2 rounded-3xl font buyNow">
-                  BUY NOW
-                </button>
-              </div>
+                <div className="h-[33.3%]">
+                  <strong className="my-6 mx-6 px-[5px] text-xl font titlePop">
+                    {fadeImage.Title}
+                  </strong>
+                  <h4 className="app__flex text-green-600 text-2xl font-bold font">
+                    {fadeImage.Price} /-
+                  </h4>
+                  <div className="app__flex my-5">
+                    <img className="h-[50px]" src={fadeImage.Site} alt="" />
+                  </div>
+                  <strong className="app__flex font font-bold text-2xl">
+                    BEST PRICE
+                  </strong>
+                </div>
+                <div className="w-full flex items-center justify-center h-[25%]">
+                  <button className=" w-[75%] text-xl items-center px-5 py-2 rounded-3xl font buyNow">
+                    BUY NOW
+                  </button>
+                </div>
+              </Link>
             </div>
           ))}
         </Slider>

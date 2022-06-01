@@ -1,12 +1,12 @@
-import { Content, Navbar, Search, PopPro } from ".././index.js";
+import { Content, CompleteNav, Search, CompletePopPro } from ".././index.js";
 
 const Home = () => {
     return (
       <>
-        <Navbar />
+        <CompleteNav />
         <Search />
-        <Content/>
-        <PopPro/>
+        <Content />
+        <CompletePopPro />
       </>
     );
 }

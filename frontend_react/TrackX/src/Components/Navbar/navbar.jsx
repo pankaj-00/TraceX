@@ -6,6 +6,8 @@ import { useNavigate } from "react-router-dom";
 import { Modal, Button } from "react-bootstrap";
 import { useAuth } from "../../contexts/AuthContext";
 
+
+
 const ModalLayout = ({ show, setShow, handleGoogleLogin }) => {
   return (
     <Modal show={show} onHide={() => setShow(false)}>
@@ -104,6 +106,7 @@ const navbar = () => {
           <Login setShow={setShow} />
         )}
       </div>
+      
     </>
   );
 };

@@ -5,3 +5,8 @@ export { default as PopPro } from "./PopPro/popPro";
 export { default as SingleProduct } from "./SinglePro/singlePro";
 export { default as Home } from "./HomePage/home";
 export { default as PriceComp } from "./SinglePro/priceComp";
+export { default as Chart } from "./SinglePro/chart";
+export { default as MobileNav } from "./Navbar/mobileNav";
+export { default as CompleteNav } from "./Navbar/completeNav";
+export { default as MobilePopPro } from "./PopPro/mobilePopPro";
+export { default as CompletePopPro } from "./PopPro/completePopPro";

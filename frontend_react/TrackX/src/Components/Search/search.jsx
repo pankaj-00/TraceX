@@ -3,7 +3,7 @@ import "./search.scss";
 const search = () => {
     return (
       <div className="searchMainContainer">
-        <div className=" flex justify-center font-bold text-6xl welcome ">
+        <div className=" flex justify-center font-bold text-5xl md:text-6xl welcome ">
           Welcome to TraceX
         </div>
       <div className="flex justify-center searchContainer">
