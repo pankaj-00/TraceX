@@ -1,0 +1,112 @@
+.app__navbar{
+    background-color: #050539;
+    padding: 1rem 2rem;
+
+}
+
+.app__navbar-content{
+    font-family: 'Montserrat',
+    sans-serif;    
+    color: whitesmoke;
+    margin-right:-80px;
+
+    @media screen and (min-width: 2000px) {
+        margin-right:-160px;
+    }
+
+    div{
+        font-size:1.75rem;
+        margin: 2rem;
+    }
+}
+
+.app__navbar-logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    img{
+        @media screen and (min-width: 2000px) {
+            width: 360px;
+            }
+    }
+}
+
+.app__navbar-login{
+    justify-content: flex-end;
+    padding: 1rem 2rem;
+    width: 400px;
+    height: 150px;
+
+    button{
+        background-color: #6C6C7E;
+        width: 50%;
+        height: 50%;
+        border-radius:10px;
+        padding:1rem 2rem;
+        margin: 1rem;
+
+        color: white;
+        font-weight: 700;
+        font-size: 1.1rem;
+        text-align: center;
+
+        &:hover{
+            background-color: #3464a9;
+            color: white;
+
+        }
+
+        
+
+        
+    }
+
+    button.login{
+        background-color: #1DA52A;
+
+        &:hover{
+            background-color: #3464a9;
+            color: white;
+
+        }
+
+
+    }
+}
+
+.app__navbar-profile{
+    display:flex;
+    align-items:center;
+    padding: 1rem 2rem;
+    width: 400px;
+    height: 150px;
+
+    button{
+
+        background-color: #6C6C7E;
+        width: 50%;
+        height: 50%;
+        border-radius:10px;
+        padding:1rem 2rem;
+        margin: 2rem;
+
+        color: white !important;
+        font-weight: 700 !important;
+        font-size: 1.1rem !important;
+        text-align: center;
+        border: none !important;
+
+        &:hover{
+            background-color: #3464a9;
+            color: white;
+
+        }
+    }
+    img{
+        width: 7.5rem;
+        height: 7.5rem;
+        border-radius:50%;
+    }
+}
+
